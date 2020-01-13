@@ -8,3 +8,5 @@ The person who created this file and styled is Felix Ouma
 
 ## setup instructions
 to view this application, follow this link https://github.com/JadyVella/Life-Hacks
+
+## BDD
