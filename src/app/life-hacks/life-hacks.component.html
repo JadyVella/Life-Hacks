@@ -1,0 +1,9 @@
+<h1>Best Hacks in Life</h1>
+<hr>
+<ul>
+  <div *ngFor='let quote of lifehacks; let i = index'>
+    <li>{{quote.quotes}}</li>
+    <button (click)='showDetails(i)'>Show Details</button>
+    <app-life-hacks-details *ngIf='quote.showAuthor' (toDelete)='deleteGoal($event,i)'></app-life-hacks-details>
+  </div>
+</ul>

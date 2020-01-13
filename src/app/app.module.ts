@@ -3,10 +3,16 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { LifeHacksDetailsComponent } from './life-hacks-details/life-hacks-details.component';
+import { LifeHacksComponent } from './life-hacks/life-hacks.component';
+import { LifeHacksFormComponent } from './life-hacks-form/life-hacks-form.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LifeHacksDetailsComponent,
+    LifeHacksComponent,
+    LifeHacksFormComponent
   ],
   imports: [
     BrowserModule,
