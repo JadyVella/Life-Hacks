@@ -1,7 +1,10 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 <p>{{lifehacks.author}}</p>
 <p>Due on {{quote.completeDate|dateCount}} days</p>
 
-    <div class="row">
+    <!-- <div class="row">
 
         <div>
 
@@ -20,12 +23,17 @@
             
                 <i class="fa fa-thumb-down pr-1 dislike" ng-click="count = count + 1" ng-init="count=0" style="color:red;"></i>
             
-            </a>
+            </a> -->
 
-            <span class="m-4">{{ dislikeCounter }}</span>
+            <!-- <span class="m-4">{{ dislikeCounter }}</span> -->
 
-        </div>
+        <!-- </div> -->
 
         <button (click)="goalDelete(true)">Delete Quote</button>
+        <br><br>
+        <button (click)='likeQuo()' id="display" class="btn btn-outline-success">like <i class="fa fa-thumbs-up"
+            style="font-size:20px"></i></button><span id="lk">0</span>
+            <button id="dislike" style="color: red;">Dislike <i class="fa fa-thumbs-down"
+              style="font-size:20px"></i></button><span id="dlk">0</span>
 
-    </div>
+    <!-- </div> -->
