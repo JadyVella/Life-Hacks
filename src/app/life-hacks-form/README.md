@@ -7,3 +7,4 @@ This application helps one in time of discouragement to find encouraging quotes 
 The person who created this file and styled is Felix Ouma
 
 ## setup instructions
+to view this application, follow this link https://github.com/JadyVella/Life-Hacks
