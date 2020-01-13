@@ -18,3 +18,8 @@ To add your quote, just fill in the form
 * JavaScript
 * Bootstrap
 * Angulajs
+
+## Contact Information
+Email: felixouma379@gmail.com
+Cell No.: 0792231660
+Facebook: Jady Vella
