@@ -5,3 +5,5 @@ This application helps one in time of discouragement to find encouraging quotes 
 
 ## Author Information
 The person who created this file and styled is Felix Ouma
+
+## setup instructions
