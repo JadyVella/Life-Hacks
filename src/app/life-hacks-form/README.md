@@ -10,3 +10,4 @@ The person who created this file and styled is Felix Ouma
 to view this application, follow this link https://github.com/JadyVella/Life-Hacks
 
 ## BDD
+To add your quote, just fill in the form
