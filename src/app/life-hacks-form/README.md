@@ -17,3 +17,4 @@ To add your quote, just fill in the form
 * HTML
 * JavaScript
 * Bootstrap
+* Angulajs
