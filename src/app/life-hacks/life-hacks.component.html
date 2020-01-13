@@ -1,9 +1,22 @@
-<h1>Best Hacks in Life</h1>
-<hr>
-<ul>
-  <div *ngFor='let quote of lifehacks; let i = index'>
-    <li>{{quote.quotes}}</li>
-    <button (click)='showDetails(i)'>Show Details</button>
-    <app-life-hacks-details *ngIf='quote.showAuthor' (toDelete)='deleteGoal($event,i)'></app-life-hacks-details>
+<div class="container">
+  <h1>Best Hacks in Life</h1>
+  <hr>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div *ngFor='let quote of lifehacks; let i = index'>
+        <div>
+          <li>{{quote.quotes}}</li>
+          <button (click)='showDetails(i)'>Show Details</button>
+        </div>
+
+        <div *ngIf='quote.showAuthor'>
+          <app-life-hacks-details (toDelete)='deleteGoal($event,i)'></app-life-hacks-details>
+        </div>
+      </div>
+    </div>
+    <div>
+      <app-life-hacks-form></app-life-hacks-form>
+    </div>
   </div>
-</ul>
+</div>

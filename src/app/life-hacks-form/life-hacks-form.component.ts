@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LifeHacks } from '../life-hacks'
 
 @Component({
   selector: 'app-life-hacks-form',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LifeHacksFormComponent implements OnInit {
 
+  newLifeHacks = new LifeHacks(0,"","","");
   constructor() { }
 
   ngOnInit() {
