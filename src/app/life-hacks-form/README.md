@@ -23,3 +23,5 @@ To add your quote, just fill in the form
 Email: felixouma379@gmail.com
 Cell No.: 0792231660
 Facebook: Jady Vella
+
+## Licence & Copyright
