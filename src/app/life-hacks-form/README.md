@@ -15,3 +15,4 @@ To add your quote, just fill in the form
 ## Technologies
 * CSS
 * HTML
+* JavaScript
