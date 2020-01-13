@@ -13,4 +13,4 @@ to view this application, follow this link https://github.com/JadyVella/Life-Hac
 To add your quote, just fill in the form
 
 ## Technologies
-
+* CSS
