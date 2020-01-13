@@ -1,27 +1,31 @@
 <div class="container-fluid">
-    <h2 class="text-center">Create a new Goal</h2>
+    <h2 class="text-center">Create a new Quote</h2>
     <hr>
-    <form #goalForm='ngForm'>
+    <form (ngSubmit)="submitQuote()" #LifeHacksForm='ngForm'>
         <div class="form-group">
 
-            <label for="name">Name</label>
-            <input type="text" required class="form-control" id="name" [(ngModel)]="newLifeHacks.quotes" name="quotes" #quotes='ngModel'>
-            <div [hidden]="quotes.valid || quotes.pristine" class="alert alert-danger">
-                <p>Name is required</p>
+            <label for="author">Author</label>
+            <input type="text" required class="form-control" id="author" [(ngModel)]="newLifeHacks.author" name="author" #author='ngModel'>
+            <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
+                <p>Author name is required</p>
             </div>
 
         </div>
         <div class="form-group">
 
-            <label for="description">Description</label>
-            <textarea class="form-control" id="description" rows="4" required></textarea>
+            <label for="quote">Quote</label>
+            <textarea class="form-control" id="quote" [(ngModel)]="newLifeHacks.quote" name="quote" #quote="ngModel" rows="4" required></textarea>
 
         </div>
         <div class="form-group">
 
-            <label for="complete">Completion</label>
-            <input type="date" id="complete" required>
+            <label for="name">Name</label>
+            <input type="text" id="name" required class="form-control" [(ngModel)]="newLifeHacks.name" name="name" required>
+            <!-- <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+                <p>Name is required</p>
+            </div> -->
 
         </div>
+        <button type="submit" class="btn btn-success">Add Quotes</button>
     </form>
 </div>

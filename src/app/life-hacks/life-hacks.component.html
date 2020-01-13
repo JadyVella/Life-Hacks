@@ -7,7 +7,7 @@
       <div *ngFor='let quote of lifehacks; let i = index'>
         <div>
           <li>{{quote.quotes}}</li>
-          <button (click)='showDetails(i)'>Show Details</button>
+          <button (click)='showDetails(i)' class="btn btn-primary">Show Details</button>
         </div>
 
         <div *ngIf='quote.showAuthor'>
@@ -15,8 +15,8 @@
         </div>
       </div>
     </div>
-    <div>
-      <app-life-hacks-form></app-life-hacks-form>
+    <div class="col-md-6">
+      <app-life-hacks-form (addQuote)="addNewQuote($event)"></app-life-hacks-form>
     </div>
   </div>
 </div>

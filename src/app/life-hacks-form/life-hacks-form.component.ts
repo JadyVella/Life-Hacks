@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { LifeHacks } from '../life-hacks'
 
 @Component({
@@ -8,7 +8,12 @@ import { LifeHacks } from '../life-hacks'
 })
 export class LifeHacksFormComponent implements OnInit {
 
-  newLifeHacks = new LifeHacks(0,"","","");
+  newLifeHacks = new LifeHacks(0,"","","",new Date());
+  @Output() addQuote = new EventEmitter<LifeHacks>();
+  
+  submitQuote(){
+    this.addQuote.emit(this.newLifeHacks);
+  }
   constructor() { }
 
   ngOnInit() {
