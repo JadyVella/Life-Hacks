@@ -1,33 +1,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-
-<p>{{quotes.author}}</p>
-<p>Due on {{quotes.completeDate|dateCount}} days</p>
-
-    <!-- <div class="row">
-
-        <div>
-
-            <a href="#" onclick="event.preventDefault()" (click)="countClick()">
-            
-                <i class="fa fa-thumb-up pr-1 ml-4 like" ng-click="count = count + 1" ng-init="count=0" style="color:green;"></i>
-
-            </a>
-
-            <span class="m-4">{{ clickCounter }}</span>
-
-        </div>
-        <div>
-
-            <a href="#" onclick="event.preventDefault()" (click)="countDislike()">
-            
-                <i class="fa fa-thumb-down pr-1 dislike" ng-click="count = count + 1" ng-init="count=0" style="color:red;"></i>
-            
-            </a> -->
-
-            <!-- <span class="m-4">{{ dislikeCounter }}</span> -->
-
-        <!-- </div> -->
+<p>Due on days</p>
 
         <button (click)="goalDelete(true)">Delete Quote</button>
         <br><br>
@@ -35,5 +8,3 @@
             style="font-size:20px"></i></button><span id="lk">0</span>
             <button id="dislike" style="color: red;">Dislike <i class="fa fa-thumbs-down"
               style="font-size:20px"></i></button><span id="dlk">0</span>
-
-    <!-- </div> -->
